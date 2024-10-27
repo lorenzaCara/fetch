@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .col{
+        display: flex;
+        justify-content: space-between;
+    }
+    .image-container {
+    /* dimensioni di riferimento quadrati anche per i pending o err */
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 10px;
+    background-color: #f9f9f9; /* colore di backgroud mentre carica */
+    }
+    .title-container {
+        font-size: 14px;
+        color: #333;
+        margin-top: 5px;
+        padding: 5px;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+<body>
+    <div id="photos">
+        <p class="loading">Loading...</p>
+    </div>
+    <script src="ImageList.js"></script>
+</body>
+</html>

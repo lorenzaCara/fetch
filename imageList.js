@@ -27,11 +27,10 @@ fetch('https://jsonplaceholder.typicode.com/photos')
 
             const img = document.createElement('img');
             img.src = photo.thumbnailUrl;
-            
             divImg.appendChild(img);
         });
     })
     .catch(error => {
-        console.error('Error fetching photos:', error);
+        console.error('Error:', error);
         loading.textContent = "Error";
     });
